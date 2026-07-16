@@ -3,30 +3,34 @@ document.getElementById("verifyForm").addEventListener("submit", async (e) => {
 
     const otp = document.getElementById("otp").value.trim();
 
-    const email = localStorage.getItem("pendingEmail");
+    const userId = localStorage.getItem("pendingUserId");
     const name = localStorage.getItem("pendingName");
-    const userId = localStorage.getItem("userId"); // We'll save this when sending the OTP
 
-    if (!otp) {
-        alert("Enter the verification code.");
+    if (!otp || !userId) {
+        alert("Verification data missing. Please register again.");
         return;
     }
 
     try {
-        // Verify the OTP and create a session
-        await account.createSession(userId, otp);
+        // Verify OTP and create session
+        await account.createSession({
+            userId: userId,
+            secret: otp
+        });
 
-        // Save the user's name (optional)
-        try {
-            await account.updateName(name);
-        } catch (e) {
-            console.log("Couldn't update name:", e);
+        // Optional: set the user's name
+        if (name) {
+            try {
+                await account.updateName(name);
+            } catch (_) {}
         }
 
-        localStorage.removeItem("pendingEmail");
+        // Cleanup
         localStorage.removeItem("pendingName");
-        localStorage.removeItem("userId");
+        localStorage.removeItem("pendingEmail");
+        localStorage.removeItem("pendingUserId");
 
+        // Go to dashboard
         window.location.href = "dashboard.html";
 
     } catch (err) {
