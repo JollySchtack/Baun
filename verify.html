@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Banca - Create Account</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/nice-select.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/nouislider.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+</head>
+
+<body>
+
+    <main class="auth-page-wrapper d-flex align-items-center justify-content-center h-100vh">
+        
+        <!-- Centered Card Container -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-11 col-xxl-10">
+                    <div class="auth-card shadow-lg overflow-hidden bg-white rounded-4">
+                        <div class="row g-0">
+                            
+                            <!-- Left Side: Register Form -->
+                            <div class="col-lg-6 order-lg-1">
+                                <div class="auth-form-side p-5 d-flex flex-column h-100 justify-content-center">
+                                    <div class="auth-form-header mb-4">
+                                        <a href="index.html" class="d-flex align-items-center mb-4 text-decoration-none">
+                                            <div class="icon-box-sm bg-primary text-white rounded-3 me-2 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                                                <i class="icon_wallet_alt"></i>
+                                            </div>
+                                            <span class="fw-bold fs-4 text-dark">Banca</span>
+                                        </a>
+                                        <h2 class="fw-bold mb-2 text-dark">Create Account</h2>
+                                        <p class="text-muted">Start managing your finances with Banca today.</p>
+                                    </div>
+
+                                    <!--<form action="dashboard.html">-->
+                                    <form id="verifyForm">
+
+    <h2>Verify Email</h2>
+
+    <p>Enter the 6-digit code sent to your email.</p>
+
+    <input
+        id="otp"
+        type="text"
+        class="form-control"
+        placeholder="123456"
+        maxlength="6"
+        required
+    >
+
+    <button type="submit" class="theme-btn w-100">
+        Verify
+    </button>
+
+</form>
+                                </div>
+                            </div>
+
+                            <!-- Right Side: Dark Banner (Reused style) -->
+                            <div class="col-lg-6 d-none d-lg-block order-lg-2">
+                                <div class="auth-banner-side h-100 p-5 d-flex flex-column justify-content-center position-relative text-white" style="background-color: #032d3c;">
+                                    <div class="banner-content position-relative z-index-2 my-auto">
+                                        <span class="badge bg-white bg-opacity-10 text-dark mb-4 px-3 py-2 rounded-pill fw-light letter-spacing-2">TRUSTED BY EXPERTS</span>
+                                        <h2 class="display-6 fw-bold mb-4 text-white">Join over 50,000 users building their future.</h2>
+                                        
+                                        <div class="testimonial-simple mb-5">
+                                            <i class="icon_quotations fs-1 text-white-50 mb-3 d-block"></i>
+                                            <p class="fs-5 lh-base mb-4 opacity-75">"Setting up my business account took less than 5 minutes. The verification system is incredibly fast and secure."</p>
+                                            
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-circle me-3 bg-white text-dark rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 45px; height: 45px;">SJ</div>
+                                                <div>
+                                                    <h6 class="mb-0 fw-bold text-white">Sarah Jenkins</h6>
+                                                    <small class="text-white-50">Founder of DesignCo</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Background Gradient/Effect -->
+                                    <div class="position-absolute top-0 end-0 p-5">
+                                        <div class="bg-gradient-primary rounded-circle" style="width: 300px; height: 300px; filter: blur(100px); opacity: 0.2; background: #2f9f89;"></div>
+                                    </div>
+                                    
+                                    <!-- Decorative pattern from CSS -->
+                                    <div class="banner-overlay"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JS here -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/appwrite@17.0.0"></script>
+    <script src="appwrite.js"></script>
+    <script src="register.js"></script>
+</body>
+
+</html>
