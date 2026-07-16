@@ -15,13 +15,15 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
         localStorage.setItem("pendingEmail", email);
 
         // Send OTP
-        await account.createEmailToken(
-            Appwrite.ID.unique(),
-            email
-        );
+        const token = await account.createEmailToken(
+    Appwrite.ID.unique(),
+    email
+);
 
-        // Go to OTP page
-        window.location.href = "verify.html";
+localStorage.setItem("userId", token.userId);
+        
+ // Go to OTP page
+window.location.href = "verify.html";
 
     } catch (err) {
         console.error(err);
