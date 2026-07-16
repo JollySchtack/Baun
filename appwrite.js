@@ -1,9 +1,7 @@
-const APPWRITE_ENDPOINT = "https://fra.cloud.appwrite.io/v1";
-const APPWRITE_PROJECT_ID = "junefire";
-const APPWRITE_PROJECT_NAME = "JuneFire";
+const client = new Appwrite.Client();
 
-const client = new Appwrite.Client()
-    .setEndpoint(APPWRITE_ENDPOINT)
-    .setProject(APPWRITE_PROJECT_ID);
+client
+    .setEndpoint("https://fra.cloud.appwrite.io/v1")
+    .setProject("junefire");
 
 const account = new Appwrite.Account(client);
