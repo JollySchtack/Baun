@@ -1,27 +1,34 @@
-console.log("REGISTER.JS LOADED");
-
 document.getElementById("registerForm").addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    const email = document.getElementById("email").value.trim();
     const name = document.getElementById("fullName").value.trim();
+    const email = document.getElementById("email").value.trim();
 
-    console.log("Email:", email);
-    console.log("Name:", name);
-
-    const data = {
-        userId: Appwrite.ID.unique(),
-        email: email
-    };
-
-    console.log("Sending:", data);
+    if (!name || !email) {
+        alert("Please complete the form.");
+        return;
+    }
 
     try {
-        const result = await account.createEmailToken(data);
 
-        console.log("SUCCESS", result);
+        // Save for later
+        localStorage.setItem("pendingName", name);
+        localStorage.setItem("pendingEmail", email);
+
+        // Send OTP
+        const token = await account.createEmailToken(
+            Appwrite.ID.unique(),
+            email
+        );
+
+        // Save returned userId
+        localStorage.setItem("pendingUserId", token.userId);
+
+        // Go to verification page
+        window.location.href = "verify.html";
 
     } catch (err) {
-        console.error("ERROR", err);
+        console.error(err);
+        alert(err.message);
     }
 });
