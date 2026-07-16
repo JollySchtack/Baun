@@ -1,0 +1,419 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Dashboard - Banca Banking</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/nice-select.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="ctn-preloader" class="ctn-preloader">
+            <div class="round_spinner">
+                <div class="spinner"></div>
+                <div class="text">
+                    <img src="img/logo/Logo-2.png" alt="">
+                </div>
+            </div>
+            <h2 class="head">Did You Know?</h2>
+            <p></p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-menu header-menu-2 bg_white" id="sticky">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid px-4">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo/Logo-2.png" srcset="img/logo/Logo-2@2x.png 2x" alt="logo">
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu_toggle">
+                            <span class="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <span class="hamburger-cross">
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav menu ms-auto">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="loan.html" class="nav-link">Loans</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="card.html" class="nav-link">Cards</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Support</a>
+                            </li>
+                        </ul>
+                        <div class="px-2 js-darkmode-btn" title="Toggle dark mode">
+                            <label for="something" class="tab-btn tab-btns">
+                                <ion-icon name="moon"></ion-icon>
+                            </label>
+                            <label for="something" class="tab-btn">
+                                <ion-icon name="sunny"></ion-icon>
+                            </label>
+                            <label class=" ball" for="something"></label>
+                            <input type="checkbox" name="something" id="something" class="dark_mode_switcher">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header end-->
+
+    <!-- Dashboard Area -->
+    <section class="dashboard-area">
+        <div class="dashboard-wrapper">
+            <!-- Sidebar -->
+            <aside class="dashboard-sidebar">
+                <div class="sidebar-header">
+                    <div class="user-profile">
+                        <div class="avatar">FA</div>
+                        <div class="user-info">
+                            <h6>Farok Ahmed</h6>
+                            <span>Premium Member</span>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="sidebar-menu">
+                    <span class="menu-label">Main Menu</span>
+                    <ul>
+                        <li><a href="dashboard.html" class="active"><i class="icon_house_alt"></i> Dashboard</a></li>
+                        <li><a href="accounts.html"><i class="icon_wallet"></i> Accounts</a></li>
+                        <li><a href="transactions.html"><i class="icon_currency"></i> Transactions</a></li>
+                        <li><a href="card.html"><i class="icon_creditcard"></i> Cards</a></li>
+                        <li><a href="loan.html"><i class="icon_document_alt"></i> Loans</a></li>
+                    </ul>
+
+                    <span class="menu-label">Others</span>
+                    <ul>
+                        <li><a href="settings.html"><i class="icon_cog"></i> Settings</a></li>
+                        <li><a href="contact.html"><i class="icon_lifesaver"></i> Help Center</a></li>
+                        <li><a href="#"><i class="icon_key_alt"></i> Logout</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="dashboard-content">
+                <!-- Dashboard Header -->
+                <div class="dashboard-header">
+                    <div class="welcome-text">
+                        <h2>Welcome back, Farok!</h2>
+                        <p>Here's what's happening with your accounts today.</p>
+                    </div>
+                    <div class="header-actions">
+                        <div class="notification-btn">
+                            <i class="far fa-bell"></i>
+                            <span class="badge">3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Account Cards -->
+                <div class="account-cards">
+                    <div class="account-card wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="card-icon primary">
+                            <i class="icon_wallet"></i>
+                        </div>
+                        <p class="card-label">Total Balance</p>
+                        <h3 class="card-value">$48,562.00</h3>
+                        <div class="card-change positive">
+                            <i class="arrow_carrot-up"></i>
+                            <span>+12.5% from last month</span>
+                        </div>
+                    </div>
+
+                    <div class="account-card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="card-icon success">
+                            <i class="icon_piechart"></i>
+                        </div>
+                        <p class="card-label">Monthly Income</p>
+                        <h3 class="card-value">$8,250.00</h3>
+                        <div class="card-change positive">
+                            <i class="arrow_carrot-up"></i>
+                            <span>+5.2% from last month</span>
+                        </div>
+                    </div>
+
+                    <div class="account-card wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="card-icon warning">
+                            <i class="icon_cart_alt"></i>
+                        </div>
+                        <p class="card-label">Monthly Expenses</p>
+                        <h3 class="card-value">$3,480.00</h3>
+                        <div class="card-change negative">
+                            <i class="arrow_carrot-down"></i>
+                            <span>-2.4% from last month</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="quick-actions wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="section-header">
+                        <h5>Quick Actions</h5>
+                        <a href="#">View All</a>
+                    </div>
+                    <div class="actions-grid">
+                        <div class="action-item">
+                            <div class="action-icon">
+                                <i class="icon_currency"></i>
+                            </div>
+                            <span>Transfer</span>
+                        </div>
+                        <div class="action-item">
+                            <div class="action-icon">
+                                <i class="icon_document_alt"></i>
+                            </div>
+                            <span>Pay Bills</span>
+                        </div>
+                        <div class="action-item">
+                            <div class="action-icon">
+                                <i class="icon_creditcard"></i>
+                            </div>
+                            <span>Request Card</span>
+                        </div>
+                        <div class="action-item">
+                            <div class="action-icon">
+                                <i class="icon_download"></i>
+                            </div>
+                            <span>Statements</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dashboard Grid -->
+                <div class="dashboard-grid">
+                    <!-- Transactions -->
+                    <div class="transaction-card wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-header">
+                            <h5>Recent Transactions</h5>
+                            <div class="filter-tabs">
+                                <button class="active">All</button>
+                                <button>Income</button>
+                                <button>Expense</button>
+                            </div>
+                        </div>
+
+                        <div class="transaction-list">
+                            <div class="transaction-item">
+                                <div class="transaction-info">
+                                    <div class="transaction-icon income">
+                                        <i class="arrow_carrot-down"></i>
+                                    </div>
+                                    <div class="transaction-details">
+                                        <h6>Salary Deposit</h6>
+                                        <span>Bank Transfer</span>
+                                    </div>
+                                </div>
+                                <div class="transaction-amount">
+                                    <p class="amount positive">+$5,250.00</p>
+                                    <p class="date">Jan 05, 2026</p>
+                                </div>
+                            </div>
+
+                            <div class="transaction-item">
+                                <div class="transaction-info">
+                                    <div class="transaction-icon expense">
+                                        <i class="arrow_carrot-up"></i>
+                                    </div>
+                                    <div class="transaction-details">
+                                        <h6>Amazon Purchase</h6>
+                                        <span>Online Shopping</span>
+                                    </div>
+                                </div>
+                                <div class="transaction-amount">
+                                    <p class="amount negative">-$156.00</p>
+                                    <p class="date">Jan 04, 2026</p>
+                                </div>
+                            </div>
+
+                            <div class="transaction-item">
+                                <div class="transaction-info">
+                                    <div class="transaction-icon transfer">
+                                        <i class="icon_currency"></i>
+                                    </div>
+                                    <div class="transaction-details">
+                                        <h6>Transfer to Sarah</h6>
+                                        <span>Personal Transfer</span>
+                                    </div>
+                                </div>
+                                <div class="transaction-amount">
+                                    <p class="amount negative">-$500.00</p>
+                                    <p class="date">Jan 03, 2026</p>
+                                </div>
+                            </div>
+
+                            <div class="transaction-item">
+                                <div class="transaction-info">
+                                    <div class="transaction-icon expense">
+                                        <i class="arrow_carrot-up"></i>
+                                    </div>
+                                    <div class="transaction-details">
+                                        <h6>Netflix Subscription</h6>
+                                        <span>Entertainment</span>
+                                    </div>
+                                </div>
+                                <div class="transaction-amount">
+                                    <p class="amount negative">-$15.99</p>
+                                    <p class="date">Jan 02, 2026</p>
+                                </div>
+                            </div>
+
+                            <div class="transaction-item">
+                                <div class="transaction-info">
+                                    <div class="transaction-icon income">
+                                        <i class="arrow_carrot-down"></i>
+                                    </div>
+                                    <div class="transaction-details">
+                                        <h6>Freelance Payment</h6>
+                                        <span>PayPal</span>
+                                    </div>
+                                </div>
+                                <div class="transaction-amount">
+                                    <p class="amount positive">+$1,200.00</p>
+                                    <p class="date">Jan 01, 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Credit Card Widget -->
+                    <div class="credit-card-widget wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="section-header">
+                            <h5>My Card</h5>
+                        </div>
+
+                        <div class="card-display">
+                            <div class="card-chip"></div>
+                            <p class="card-number">•••• •••• •••• 4589</p>
+                            <div class="card-footer">
+                                <div class="card-holder">
+                                    <span>Card Holder</span>
+                                    <p>Farok Ahmed</p>
+                                </div>
+                                <div class="card-expiry">
+                                    <span>Expires</span>
+                                    <p>12/28</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="primary-btn">Manage Card</button>
+                            <button class="secondary-btn">Block Card</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spending Analytics -->
+                <div class="spending-analytics wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="section-header">
+                        <h5>Monthly Spending</h5>
+                    </div>
+
+                    <div class="spending-bars">
+                        <div class="spending-item">
+                            <div class="item-header">
+                                <span>Food & Dining</span>
+                                <strong>$850</strong>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress food" style="width: 75%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="spending-item">
+                            <div class="item-header">
+                                <span>Shopping</span>
+                                <strong>$620</strong>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress shopping" style="width: 55%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="spending-item">
+                            <div class="item-header">
+                                <span>Transport</span>
+                                <strong>$340</strong>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress transport" style="width: 30%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="spending-item">
+                            <div class="item-header">
+                                <span>Entertainment</span>
+                                <strong>$280</strong>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress entertainment" style="width: 25%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="spending-item">
+                            <div class="item-header">
+                                <span>Bills & Utilities</span>
+                                <strong>$420</strong>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress bills" style="width: 38%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+    <!-- Dashboard Area End -->
+
+    <!-- Back to top button -->
+    <a id="back-to-top" title="Back to Top"></a>
+
+    <!-- JS here -->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/preloader.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/jquery.smoothscroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+
+</html>

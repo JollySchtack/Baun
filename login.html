@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Banca - Secure Login</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/nice-select.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/nouislider.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+</head>
+
+<body>
+
+    <main class="auth-page-wrapper d-flex align-items-center justify-content-center h-100vh">
+        
+        <!-- Centered Card Container -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-11 col-xxl-10">
+                    <div class="auth-card shadow-lg overflow-hidden bg-white rounded-4">
+                        <div class="row g-0">
+                            
+                            <!-- Left Side: Login Form -->
+                            <div class="col-lg-6">
+                                <div class="auth-form-side p-5 d-flex flex-column h-100 justify-content-center">
+                                    <div class="auth-form-header mb-5">
+                                        <a href="index.html" class="d-flex align-items-center mb-4 text-decoration-none">
+                                            <div class="icon-box-sm bg-primary text-white rounded-3 me-2 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                                                <i class="icon_wallet_alt"></i>
+                                            </div>
+                                            <span class="fw-bold fs-4 text-dark">Banca</span>
+                                        </a>
+                                        <h2 class="fw-bold mb-2 text-dark">Welcome Back!</h2>
+                                        <p class="text-muted">Sign in to access your dashboard and continue managing your finances.</p>
+                                    </div>
+
+                                    <form action="dashboard.html">
+                                        <div class="form-group-modern mb-3">
+                                            <label class="modern-label">Email</label>
+                                            <div class="input-icon-wrapper">
+                                                <i class="icon_mail_alt input-icon"></i>
+                                                <input type="email" class="form-control" placeholder="Enter your email" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group-modern mb-4">
+                                            <label class="modern-label">Password</label>
+                                            <div class="input-icon-wrapper">
+                                                <i class="icon_lock_alt input-icon"></i>
+                                                <input type="password" class="form-control" placeholder="Enter your password" required>
+                                                <span class="password-toggle"><i class="icon_eye_alt"></i></span>
+                                            </div>
+                                            <div class="text-end mt-2">
+                                                <a href="#" class="theme-link-sm">Forgot Password?</a>
+                                            </div>
+                                        </div>
+
+                                        <button type="submit" class="theme-btn w-100 py-3 mb-4 rounded-3">Sign In</button>
+
+                                        <div class="text-center position-relative mb-4">
+                                            <span class="bg-white px-3 text-muted position-relative z-index-1 small fw-bold">OR</span>
+                                            <div class="divider-line position-absolute top-50 start-0 w-100"></div>
+                                        </div>
+
+                                        <div class="d-flex flex-column gap-3">
+                                            <button type="button" class="social-btn w-100 justify-content-center">
+                                                <img src="https://www.google.com/favicon.ico" alt="G" class="me-2" style="width:16px;">
+                                                Continue with Google
+                                            </button>
+                                            <button type="button" class="social-btn w-100 justify-content-center">
+                                                <i class="fab fa-apple text-dark me-2 fs-5"></i>
+                                                Continue with Apple
+                                            </button>
+                                        </div>
+                                        
+                                        <div class="mt-4 text-center">
+                                            <p class="text-muted mb-0">Don't have an Account? <a href="register.html" class="fw-bold text-primary">Sign Up</a></p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- Right Side: Dark Banner -->
+                            <div class="col-lg-6 d-none d-lg-block">
+                                <div class="auth-banner-side h-100 p-5 d-flex flex-column justify-content-center position-relative text-white" style="background-color: #032d3c;">
+                                    <div class="banner-content position-relative z-index-2 my-auto">
+                                        <h2 class="display-6 fw-bold mb-4 text-white">Revolutionize Banking with Smarter Automation</h2>
+                                        
+                                        <div class="testimonial-simple mb-5">
+                                            <i class="icon_quotations fs-1 text-white-50 mb-3 d-block"></i>
+                                            <p class="fs-5 lh-base mb-4 opacity-75">"Banca has completely transformed our financial tracking process. It’s reliable, efficient, and ensures our investments are always optimized."</p>
+                                            
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-circle me-3 bg-white text-dark rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 45px; height: 45px;">MC</div>
+                                                <div>
+                                                    <h6 class="mb-0 fw-bold text-white">Michael Carter</h6>
+                                                    <small class="text-white-50">CFO at DevCore</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="banner-footer position-relative z-index-2 mt-auto pt-4 border-top border-white border-opacity-10">
+                                        <small class="text-uppercase letter-spacing-2 text-white-50 mb-3 d-block">Join 1k+ Teams</small>
+                                        <div class="d-flex flex-wrap gap-4 align-items-center opacity-75">
+                                            <span class="fw-bold fs-5"><i class="fab fa-discord me-2"></i>Discord</span>
+                                            <span class="fw-bold fs-5"><i class="fab fa-slack me-2"></i>Slack</span>
+                                            <span class="fw-bold fs-5"><i class="fab fa-dropbox me-2"></i>Dropbox</span>
+                                            <span class="fw-bold fs-5"><i class="fab fa-spotify me-2"></i>Spotify</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Background Gradient/Effect -->
+                                    <div class="position-absolute top-0 end-0 p-5">
+                                        <div class="bg-gradient-primary rounded-circle" style="width: 300px; height: 300px; filter: blur(100px); opacity: 0.2; background: #2f9f89;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JS here -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

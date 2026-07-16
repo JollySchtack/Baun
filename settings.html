@@ -1,0 +1,561 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Settings - Banca Banking</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/nice-select.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="ctn-preloader" class="ctn-preloader">
+            <div class="round_spinner">
+                <div class="spinner"></div>
+                <div class="text">
+                    <img src="img/logo/Logo-2.png" alt="">
+                </div>
+            </div>
+            <h2 class="head">Did You Know?</h2>
+            <p></p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-menu header-menu-2 bg_white" id="sticky">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid px-4">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo/Logo-2.png" srcset="img/logo/Logo-2@2x.png 2x" alt="logo">
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu_toggle">
+                            <span class="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <span class="hamburger-cross">
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav menu ms-auto">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="dashboard.html" class="nav-link">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="loan.html" class="nav-link">Loans</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Support</a>
+                            </li>
+                        </ul>
+                        <div class="px-2 js-darkmode-btn" title="Toggle dark mode">
+                            <label for="something" class="tab-btn tab-btns">
+                                <ion-icon name="moon"></ion-icon>
+                            </label>
+                            <label for="something" class="tab-btn">
+                                <ion-icon name="sunny"></ion-icon>
+                            </label>
+                            <label class=" ball" for="something"></label>
+                            <input type="checkbox" name="something" id="something" class="dark_mode_switcher">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header end-->
+
+    <!-- Dashboard Area -->
+    <section class="dashboard-area">
+        <div class="dashboard-wrapper">
+            <!-- Sidebar -->
+            <aside class="dashboard-sidebar">
+                <div class="sidebar-header">
+                    <div class="user-profile">
+                        <div class="avatar">FA</div>
+                        <div class="user-info">
+                            <h6>Farok Ahmed</h6>
+                            <span>Premium Member</span>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="sidebar-menu">
+                    <span class="menu-label">Main Menu</span>
+                    <ul>
+                        <li><a href="dashboard.html"><i class="icon_house_alt"></i> Dashboard</a></li>
+                        <li><a href="accounts.html"><i class="icon_wallet"></i> Accounts</a></li>
+                        <li><a href="transactions.html"><i class="icon_currency"></i> Transactions</a></li>
+                        <li><a href="card.html"><i class="icon_creditcard"></i> Cards</a></li>
+                        <li><a href="loan.html"><i class="icon_document_alt"></i> Loans</a></li>
+                    </ul>
+
+                    <span class="menu-label">Others</span>
+                    <ul>
+                        <li><a href="settings.html" class="active"><i class="icon_cog"></i> Settings</a></li>
+                        <li><a href="contact.html"><i class="icon_lifesaver"></i> Help Center</a></li>
+                        <li><a href="#"><i class="icon_key_alt"></i> Logout</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="dashboard-content">
+                <!-- Settings Header -->
+                <div class="dashboard-header">
+                    <div class="welcome-text">
+                        <h2>Settings</h2>
+                        <p>Manage your account settings and preferences</p>
+                    </div>
+                </div>
+
+                <!-- Settings Layout -->
+                <div class="settings-layout">
+                    <!-- Settings Tabs -->
+                    <div class="settings-tabs wow fadeInUp">
+                        <div class="settings-tab active" data-tab="profile">
+                            <i class="icon_profile"></i> Profile
+                        </div>
+                        <div class="settings-tab" data-tab="security">
+                            <i class="icon_lock_alt"></i> Security
+                        </div>
+                        <div class="settings-tab" data-tab="notifications">
+                            <i class="icon_clock_alt"></i> Notifications
+                        </div>
+                        <div class="settings-tab" data-tab="privacy">
+                            <i class="icon_shield_alt"></i> Privacy
+                        </div>
+                        <div class="settings-tab" data-tab="connected">
+                            <i class="icon_link_alt"></i> Connected Apps
+                        </div>
+                    </div>
+
+                    <!-- Settings Content -->
+                    <div class="settings-content">
+                        <!-- Profile Section -->
+                        <div class="settings-section wow fadeInUp" id="profile" data-wow-delay="0.1s">
+                            <div class="section-header">
+                                <h4>Profile Information</h4>
+                                <p>Update your personal details and profile picture</p>
+                            </div>
+
+                            <div class="profile-header">
+                                <div class="profile-avatar">
+                                    <div class="avatar-img">FA</div>
+                                    <div class="avatar-edit">
+                                        <i class="icon_camera"></i>
+                                    </div>
+                                </div>
+                                <div class="profile-info">
+                                    <h3>Farok Ahmed</h3>
+                                    <p>farok.ahmed@example.com</p>
+                                    <span class="member-badge">Premium Member</span>
+                                </div>
+                            </div>
+
+                            <form class="settings-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>First Name</label>
+                                        <input type="text" value="John">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Last Name</label>
+                                        <input type="text" value="Doe">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Email Address</label>
+                                        <input type="email" value="john.doe@example.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Phone Number</label>
+                                        <input type="tel" value="+1 (555) 123-4567">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Address</label>
+                                    <input type="text" value="123 Main Street, Suite 100">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>City</label>
+                                        <input type="text" value="New York">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Country</label>
+                                        <select class="country-select">
+                                            <option selected>United States</option>
+                                            <option>Canada</option>
+                                            <option>United Kingdom</option>
+                                            <option>Australia</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn-save">Save Changes</button>
+                                    <button type="button" class="btn-cancel">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Security Section -->
+                        <div class="settings-section wow fadeInUp" id="security" data-wow-delay="0.2s">
+                            <div class="section-header">
+                                <h4>Security Settings</h4>
+                                <p>Manage your password and security preferences</p>
+                            </div>
+
+                            <div class="security-card">
+                                <div class="security-info">
+                                    <div class="security-icon enabled">
+                                        <i class="icon_lock_alt"></i>
+                                    </div>
+                                    <div class="security-details">
+                                        <h6>Password</h6>
+                                        <span>Last changed 30 days ago</span>
+                                    </div>
+                                </div>
+                                <div class="security-action">
+                                    <button class="btn-change">Change Password</button>
+                                </div>
+                            </div>
+
+                            <div class="security-card">
+                                <div class="security-info">
+                                    <div class="security-icon enabled">
+                                        <i class="icon_mobile"></i>
+                                    </div>
+                                    <div class="security-details">
+                                        <h6>Two-Factor Authentication</h6>
+                                        <span>Enabled via SMS</span>
+                                    </div>
+                                </div>
+                                <div class="security-action">
+                                    <button class="btn-manage">Manage</button>
+                                </div>
+                            </div>
+
+                            <div class="security-card">
+                                <div class="security-info">
+                                    <div class="security-icon warning">
+                                        <i class="icon_key_alt"></i>
+                                    </div>
+                                    <div class="security-details">
+                                        <h6>Recovery Codes</h6>
+                                        <span>3 codes remaining</span>
+                                    </div>
+                                </div>
+                                <div class="security-action">
+                                    <button class="btn-manage">Generate New</button>
+                                </div>
+                            </div>
+
+                            <div class="security-card">
+                                <div class="security-info">
+                                    <div class="security-icon disabled">
+                                        <i class="icon_mobile"></i>
+                                    </div>
+                                    <div class="security-details">
+                                        <h6>Biometric Login</h6>
+                                        <span>Not enabled</span>
+                                    </div>
+                                </div>
+                                <div class="security-action">
+                                    <button class="btn-enable">Enable</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Notifications Section -->
+                        <div class="settings-section wow fadeInUp" id="notifications" data-wow-delay="0.3s">
+                            <div class="section-header">
+                                <h4>Notification Preferences</h4>
+                                <p>Choose how you want to be notified</p>
+                            </div>
+
+                            <div class="toggle-item">
+                                <div class="toggle-info">
+                                    <h6>Email Notifications</h6>
+                                    <p>Receive transaction alerts via email</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="toggle-item">
+                                <div class="toggle-info">
+                                    <h6>Push Notifications</h6>
+                                    <p>Get instant alerts on your device</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="toggle-item">
+                                <div class="toggle-info">
+                                    <h6>SMS Alerts</h6>
+                                    <p>Receive text messages for important updates</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="toggle-item">
+                                <div class="toggle-info">
+                                    <h6>Marketing Communications</h6>
+                                    <p>Receive offers and promotional content</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="toggle-item">
+                                <div class="toggle-info">
+                                    <h6>Security Alerts</h6>
+                                    <p>Get notified about suspicious activities</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Privacy Section -->
+                        <div class="settings-section wow fadeInUp" id="privacy" data-wow-delay="0.45s">
+                            <div class="section-header">
+                                <h4>Privacy Settings</h4>
+                                <p>Control your privacy and data sharing preferences</p>
+                            </div>
+
+                            <div class="toggle-item">
+                                <div class="toggle-info">
+                                    <h6>Profile Visibility</h6>
+                                    <p>Allow others to see your profile information</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="toggle-item">
+                                <div class="toggle-info">
+                                    <h6>Transaction History</h6>
+                                    <p>Share transaction data with linked financial apps</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="toggle-item">
+                                <div class="toggle-info">
+                                    <h6>Analytics & Personalization</h6>
+                                    <p>Help us improve by sharing usage data</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="toggle-item">
+                                <div class="toggle-info">
+                                    <h6>Location Services</h6>
+                                    <p>Use your location for nearby ATMs and branches</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="toggle-item">
+                                <div class="toggle-info">
+                                    <h6>Third-Party Data Sharing</h6>
+                                    <p>Allow partner services to access your data</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Connected Apps -->
+                        <div class="settings-section wow fadeInUp" id="connected" data-wow-delay="0.4s">
+                            <div class="section-header">
+                                <h4>Connected Applications</h4>
+                                <p>Manage third-party apps connected to your account</p>
+                            </div>
+
+                            <div class="connected-app">
+                                <div class="app-info">
+                                    <div class="app-icon">
+                                        <i class="social_googleplus"></i>
+                                    </div>
+                                    <div class="app-details">
+                                        <h6>Google</h6>
+                                        <span>Connected on Dec 15, 2025</span>
+                                    </div>
+                                </div>
+                                <div class="app-action">
+                                    <button>Disconnect</button>
+                                </div>
+                            </div>
+
+                            <div class="connected-app">
+                                <div class="app-info">
+                                    <div class="app-icon">
+                                        <i class="social_facebook"></i>
+                                    </div>
+                                    <div class="app-details">
+                                        <h6>Facebook</h6>
+                                        <span>Connected on Nov 20, 2025</span>
+                                    </div>
+                                </div>
+                                <div class="app-action">
+                                    <button>Disconnect</button>
+                                </div>
+                            </div>
+
+                            <div class="connected-app">
+                                <div class="app-info">
+                                    <div class="app-icon">
+                                        <i class="icon_cloud-upload_alt"></i>
+                                    </div>
+                                    <div class="app-details">
+                                        <h6>Dropbox</h6>
+                                        <span>Connected on Oct 5, 2025</span>
+                                    </div>
+                                </div>
+                                <div class="app-action">
+                                    <button>Disconnect</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Danger Zone -->
+                        <div class="settings-section wow fadeInUp" id="danger" data-wow-delay="0.5s">
+                            <div class="section-header">
+                                <h4>Danger Zone</h4>
+                                <p>Irreversible and destructive actions</p>
+                            </div>
+
+                            <div class="danger-zone">
+                                <div class="danger-item">
+                                    <div class="danger-info">
+                                        <h6>Deactivate Account</h6>
+                                        <p>Temporarily disable your account. You can reactivate anytime.</p>
+                                    </div>
+                                    <button>Deactivate</button>
+                                </div>
+                                <div class="danger-item">
+                                    <div class="danger-info">
+                                        <h6>Delete Account</h6>
+                                        <p>Permanently delete your account and all associated data.</p>
+                                    </div>
+                                    <button>Delete Account</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+    <!-- Dashboard Area End -->
+
+    <!-- Back to top button -->
+    <a id="back-to-top" title="Back to Top"></a>
+
+    <!-- JS here -->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/preloader.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/jquery.smoothscroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <!-- Settings Tabs Navigation -->
+    <script>
+        $(document).ready(function () {
+            // Settings tab click handler
+            $('.settings-tab').on('click', function () {
+                // Remove active class from all tabs
+                $('.settings-tab').removeClass('active');
+                // Add active class to clicked tab
+                $(this).addClass('active');
+
+                // Get the target section ID
+                var targetId = $(this).data('tab');
+                var targetSection = $('#' + targetId);
+
+                // Scroll to the section with offset for header
+                if (targetSection.length) {
+                    $('html, body').animate({
+                        scrollTop: targetSection.offset().top - 100
+                    }, 500);
+                }
+            });
+
+            // Update active tab on scroll
+            $(window).on('scroll', function () {
+                var scrollPosition = $(window).scrollTop() + 150;
+
+                $('.settings-section').each(function () {
+                    var sectionTop = $(this).offset().top;
+                    var sectionBottom = sectionTop + $(this).outerHeight();
+                    var sectionId = $(this).attr('id');
+
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                        $('.settings-tab').removeClass('active');
+                        $('.settings-tab[data-tab="' + sectionId + '"]').addClass('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

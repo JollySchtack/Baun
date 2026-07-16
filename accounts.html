@@ -1,0 +1,435 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>My Accounts - Banca Banking</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/nice-select.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="ctn-preloader" class="ctn-preloader">
+            <div class="round_spinner">
+                <div class="spinner"></div>
+                <div class="text">
+                    <img src="img/logo/Logo-2.png" alt="">
+                </div>
+            </div>
+            <h2 class="head">Did You Know?</h2>
+            <p></p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-menu header-menu-2 bg_white" id="sticky">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid px-4">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo/Logo-2.png" srcset="img/logo/Logo-2@2x.png 2x" alt="logo">
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu_toggle">
+                            <span class="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <span class="hamburger-cross">
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav menu ms-auto">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="dashboard.html" class="nav-link">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="loan.html" class="nav-link">Loans</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Support</a>
+                            </li>
+                        </ul>
+                        <div class="px-2 js-darkmode-btn" title="Toggle dark mode">
+                            <label for="something" class="tab-btn tab-btns">
+                                <ion-icon name="moon"></ion-icon>
+                            </label>
+                            <label for="something" class="tab-btn">
+                                <ion-icon name="sunny"></ion-icon>
+                            </label>
+                            <label class=" ball" for="something"></label>
+                            <input type="checkbox" name="something" id="something" class="dark_mode_switcher">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header end-->
+
+    <!-- Dashboard Area -->
+    <section class="dashboard-area">
+        <div class="dashboard-wrapper">
+            <!-- Sidebar -->
+            <aside class="dashboard-sidebar">
+                <div class="sidebar-header">
+                    <div class="user-profile">
+                        <div class="avatar">FA</div>
+                        <div class="user-info">
+                            <h6>Farok Ahmed</h6>
+                            <span>Premium Member</span>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="sidebar-menu">
+                    <span class="menu-label">Main Menu</span>
+                    <ul>
+                        <li><a href="dashboard.html"><i class="icon_house_alt"></i> Dashboard</a></li>
+                        <li><a href="accounts.html" class="active"><i class="icon_wallet"></i> Accounts</a></li>
+                        <li><a href="transactions.html"><i class="icon_currency"></i> Transactions</a></li>
+                        <li><a href="card.html"><i class="icon_creditcard"></i> Cards</a></li>
+                        <li><a href="loan.html"><i class="icon_document_alt"></i> Loans</a></li>
+                    </ul>
+
+                    <span class="menu-label">Others</span>
+                    <ul>
+                        <li><a href="settings.html"><i class="icon_cog"></i> Settings</a></li>
+                        <li><a href="contact.html"><i class="icon_lifesaver"></i> Help Center</a></li>
+                        <li><a href="#"><i class="icon_key_alt"></i> Logout</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="dashboard-content">
+                <!-- Accounts Header -->
+                <div class="accounts-header">
+                    <div class="page-title">
+                        <h2>My Accounts</h2>
+                        <p>Manage and monitor all your bank accounts</p>
+                    </div>
+                    <button class="add-account-btn">
+                        <i class="icon_plus"></i>
+                        Add New Account
+                    </button>
+                </div>
+
+                <!-- Account Summary -->
+                <div class="account-summary-grid wow fadeInUp">
+                    <div class="account-summary-card">
+                        <div class="summary-info">
+                            <span class="summary-label">Total Balance</span>
+                            <h3 class="summary-value">$48,562.00</h3>
+                            <div class="summary-change positive">
+                                <i class="arrow_carrot-up"></i>
+                                <span>+12.5% this month</span>
+                            </div>
+                        </div>
+                        <div class="summary-icon total">
+                            <i class="icon_wallet"></i>
+                        </div>
+                    </div>
+                    <div class="account-summary-card">
+                        <div class="summary-info">
+                            <span class="summary-label">Total Savings</span>
+                            <h3 class="summary-value">$32,180.00</h3>
+                            <div class="summary-change positive">
+                                <i class="arrow_carrot-up"></i>
+                                <span>+8.2% this month</span>
+                            </div>
+                        </div>
+                        <div class="summary-icon savings">
+                            <i class="icon_piechart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Transfer -->
+                <div class="quick-transfer-widget wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="widget-header">
+                        <h5>Quick Transfer</h5>
+                    </div>
+                    <div class="transfer-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>From Account</label>
+                                <select class="account-select">
+                                    <option>Primary Checking (...4589)</option>
+                                    <option>Savings Account (...7823)</option>
+                                    <option>Business Account (...2156)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>To Account</label>
+                                <select class="account-select">
+                                    <option>Savings Account (...7823)</option>
+                                    <option>Primary Checking (...4589)</option>
+                                    <option>Business Account (...2156)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Amount</label>
+                                <input type="text" placeholder="Enter amount">
+                            </div>
+                            <div class="form-group">
+                                <label>Description (Optional)</label>
+                                <input type="text" placeholder="Add a note">
+                            </div>
+                        </div>
+                        <button class="transfer-btn">Transfer Now</button>
+                    </div>
+                </div>
+
+                <!-- Accounts List -->
+                <div class="accounts-list">
+                    <div class="section-header">
+                        <h5>Your Accounts</h5>
+                    </div>
+
+                    <!-- Checking Account -->
+                    <div class="account-card-item wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="account-card-header">
+                            <div class="account-info">
+                                <div class="account-icon checking">
+                                    <i class="icon_wallet"></i>
+                                </div>
+                                <div class="account-details">
+                                    <h4>Primary Checking</h4>
+                                    <span class="account-number">•••• •••• •••• 4589</span>
+                                </div>
+                            </div>
+                            <div class="account-actions">
+                                <button title="View Details"><i class="icon_search"></i></button>
+                                <button title="Settings"><i class="icon_cog"></i></button>
+                                <button title="More"><i class="icon_menu-square_alt2"></i></button>
+                            </div>
+                        </div>
+                        <div class="account-card-body">
+                            <div class="account-stat">
+                                <span class="stat-label">Current Balance</span>
+                                <span class="stat-value">$12,450.00</span>
+                            </div>
+                            <div class="account-stat">
+                                <span class="stat-label">Available</span>
+                                <span class="stat-value">$11,950.00</span>
+                            </div>
+                            <div class="account-stat">
+                                <span class="stat-label">Pending</span>
+                                <span class="stat-value">$500.00</span>
+                            </div>
+                            <div class="account-stat">
+                                <span class="stat-label">Interest Rate</span>
+                                <span class="stat-value">0.01%</span>
+                            </div>
+                        </div>
+                        <div class="account-card-footer">
+                            <button class="action-btn primary"><i class="icon_currency"></i> Transfer</button>
+                            <button class="action-btn secondary"><i class="icon_document_alt"></i> Statements</button>
+                            <button class="action-btn outline"><i class="icon_download"></i> Download</button>
+                        </div>
+                    </div>
+
+                    <!-- Savings Account -->
+                    <div class="account-card-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="account-card-header">
+                            <div class="account-info">
+                                <div class="account-icon savings">
+                                    <i class="icon_piechart"></i>
+                                </div>
+                                <div class="account-details">
+                                    <h4>High-Yield Savings</h4>
+                                    <span class="account-number">•••• •••• •••• 7823</span>
+                                </div>
+                            </div>
+                            <div class="account-actions">
+                                <button title="View Details"><i class="icon_search"></i></button>
+                                <button title="Settings"><i class="icon_cog"></i></button>
+                                <button title="More"><i class="icon_menu-square_alt2"></i></button>
+                            </div>
+                        </div>
+                        <div class="account-card-body">
+                            <div class="account-stat">
+                                <span class="stat-label">Current Balance</span>
+                                <span class="stat-value">$32,180.00</span>
+                            </div>
+                            <div class="account-stat">
+                                <span class="stat-label">Available</span>
+                                <span class="stat-value">$32,180.00</span>
+                            </div>
+                            <div class="account-stat">
+                                <span class="stat-label">This Month</span>
+                                <span class="stat-value">+$2,450.00</span>
+                            </div>
+                            <div class="account-stat">
+                                <span class="stat-label">Interest Rate</span>
+                                <span class="stat-value">4.25%</span>
+                            </div>
+                        </div>
+                        <div class="account-card-footer">
+                            <button class="action-btn primary"><i class="icon_currency"></i> Transfer</button>
+                            <button class="action-btn secondary"><i class="icon_document_alt"></i> Statements</button>
+                            <button class="action-btn outline"><i class="icon_download"></i> Download</button>
+                        </div>
+                    </div>
+
+                    <!-- Business Account -->
+                    <div class="account-card-item wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="account-card-header">
+                            <div class="account-info">
+                                <div class="account-icon business">
+                                    <i class="icon_building"></i>
+                                </div>
+                                <div class="account-details">
+                                    <h4>Business Account</h4>
+                                    <span class="account-number">•••• •••• •••• 2156</span>
+                                </div>
+                            </div>
+                            <div class="account-actions">
+                                <button title="View Details"><i class="icon_search"></i></button>
+                                <button title="Settings"><i class="icon_cog"></i></button>
+                                <button title="More"><i class="icon_menu-square_alt2"></i></button>
+                            </div>
+                        </div>
+                        <div class="account-card-body">
+                            <div class="account-stat">
+                                <span class="stat-label">Current Balance</span>
+                                <span class="stat-value">$3,932.00</span>
+                            </div>
+                            <div class="account-stat">
+                                <span class="stat-label">Available</span>
+                                <span class="stat-value">$3,932.00</span>
+                            </div>
+                            <div class="account-stat">
+                                <span class="stat-label">Revenue MTD</span>
+                                <span class="stat-value">$8,540.00</span>
+                            </div>
+                            <div class="account-stat">
+                                <span class="stat-label">Interest Rate</span>
+                                <span class="stat-value">0.05%</span>
+                            </div>
+                        </div>
+                        <div class="account-card-footer">
+                            <button class="action-btn primary"><i class="icon_currency"></i> Transfer</button>
+                            <button class="action-btn secondary"><i class="icon_document_alt"></i> Statements</button>
+                            <button class="action-btn outline"><i class="icon_download"></i> Download</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="account-activity wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="activity-header">
+                        <h5>Recent Activity</h5>
+                        <a href="transactions.html" class="view-all">View All</a>
+                    </div>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-info">
+                                <div class="activity-icon transfer">
+                                    <i class="icon_currency"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <h6>Transfer to Savings</h6>
+                                    <span>Internal Transfer</span>
+                                </div>
+                            </div>
+                            <div class="activity-amount">
+                                <p class="amount negative">-$1,500.00</p>
+                                <p class="time">2 hours ago</p>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-info">
+                                <div class="activity-icon deposit">
+                                    <i class="arrow_carrot-down"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <h6>Salary Deposit</h6>
+                                    <span>Direct Deposit</span>
+                                </div>
+                            </div>
+                            <div class="activity-amount">
+                                <p class="amount positive">+$5,250.00</p>
+                                <p class="time">Yesterday</p>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-info">
+                                <div class="activity-icon payment">
+                                    <i class="icon_creditcard"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <h6>Credit Card Payment</h6>
+                                    <span>Auto Payment</span>
+                                </div>
+                            </div>
+                            <div class="activity-amount">
+                                <p class="amount negative">-$850.00</p>
+                                <p class="time">Jan 3, 2026</p>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-info">
+                                <div class="activity-icon withdrawal">
+                                    <i class="arrow_carrot-up"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <h6>ATM Withdrawal</h6>
+                                    <span>City Bank ATM</span>
+                                </div>
+                            </div>
+                            <div class="activity-amount">
+                                <p class="amount negative">-$200.00</p>
+                                <p class="time">Jan 2, 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+    <!-- Dashboard Area End -->
+
+    <!-- Back to top button -->
+    <a id="back-to-top" title="Back to Top"></a>
+
+    <!-- JS here -->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/preloader.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/jquery.smoothscroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+
+</html>

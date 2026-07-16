@@ -1,0 +1,477 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Transactions - Banca Banking</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/nice-select.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="ctn-preloader" class="ctn-preloader">
+            <div class="round_spinner">
+                <div class="spinner"></div>
+                <div class="text">
+                    <img src="img/logo/Logo-2.png" alt="">
+                </div>
+            </div>
+            <h2 class="head">Did You Know?</h2>
+            <p></p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-menu header-menu-2 bg_white" id="sticky">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid px-4">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo/Logo-2.png" srcset="img/logo/Logo-2@2x.png 2x" alt="logo">
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu_toggle">
+                            <span class="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <span class="hamburger-cross">
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav menu ms-auto">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="dashboard.html" class="nav-link">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="loan.html" class="nav-link">Loans</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Support</a>
+                            </li>
+                        </ul>
+                        <div class="px-2 js-darkmode-btn" title="Toggle dark mode">
+                            <label for="something" class="tab-btn tab-btns">
+                                <ion-icon name="moon"></ion-icon>
+                            </label>
+                            <label for="something" class="tab-btn">
+                                <ion-icon name="sunny"></ion-icon>
+                            </label>
+                            <label class=" ball" for="something"></label>
+                            <input type="checkbox" name="something" id="something" class="dark_mode_switcher">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header end-->
+
+    <!-- Dashboard Area -->
+    <section class="dashboard-area">
+        <div class="dashboard-wrapper">
+            <!-- Sidebar -->
+            <aside class="dashboard-sidebar">
+                <div class="sidebar-header">
+                    <div class="user-profile">
+                        <div class="avatar">FA</div>
+                        <div class="user-info">
+                            <h6>Farok Ahmed</h6>
+                            <span>Premium Member</span>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="sidebar-menu">
+                    <span class="menu-label">Main Menu</span>
+                    <ul>
+                        <li><a href="dashboard.html"><i class="icon_house_alt"></i> Dashboard</a></li>
+                        <li><a href="accounts.html"><i class="icon_wallet"></i> Accounts</a></li>
+                        <li><a href="transactions.html" class="active"><i class="icon_currency"></i> Transactions</a>
+                        </li>
+                        <li><a href="card.html"><i class="icon_creditcard"></i> Cards</a></li>
+                        <li><a href="loan.html"><i class="icon_document_alt"></i> Loans</a></li>
+                    </ul>
+
+                    <span class="menu-label">Others</span>
+                    <ul>
+                        <li><a href="settings.html"><i class="icon_cog"></i> Settings</a></li>
+                        <li><a href="contact.html"><i class="icon_lifesaver"></i> Help Center</a></li>
+                        <li><a href="#"><i class="icon_key_alt"></i> Logout</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="dashboard-content">
+                <!-- Transactions Header -->
+                <div class="transactions-header">
+                    <div class="page-title">
+                        <h2>Transactions</h2>
+                        <p>View and manage all your transactions</p>
+                    </div>
+                    <div class="header-actions">
+                        <button class="export-btn">
+                            <i class="icon_download"></i>
+                            Export CSV
+                        </button>
+                        <button class="add-transaction-btn">
+                            <i class="icon_plus"></i>
+                            New Transaction
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Transaction Stats -->
+                <div class="transaction-stats wow fadeInUp">
+                    <div class="stat-card">
+                        <div class="stat-icon total">
+                            <i class="icon_currency"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h4>156</h4>
+                            <span>Total Transactions</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon income">
+                            <i class="arrow_carrot-down"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h4>$24,850</h4>
+                            <span>Total Income</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon expense">
+                            <i class="arrow_carrot-up"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h4>$12,340</h4>
+                            <span>Total Expenses</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon pending">
+                            <i class="icon_clock_alt"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h4>5</h4>
+                            <span>Pending</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Filters -->
+                <div class="transaction-filters wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="filters-row">
+                        <div class="search-group">
+                            <label>Search</label>
+                            <i class="icon_search"></i>
+                            <input type="text" class="search-input" placeholder="Search transactions...">
+                        </div>
+                        <div class="filter-group">
+                            <label>Type</label>
+                            <select class="filter-select">
+                                <option value="">All Types</option>
+                                <option value="income">Income</option>
+                                <option value="expense">Expense</option>
+                                <option value="transfer">Transfer</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label>Category</label>
+                            <select class="filter-select">
+                                <option value="">All Categories</option>
+                                <option value="shopping">Shopping</option>
+                                <option value="food">Food & Dining</option>
+                                <option value="transport">Transport</option>
+                                <option value="entertainment">Entertainment</option>
+                                <option value="bills">Bills & Utilities</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label>Date Range</label>
+                            <select class="filter-select">
+                                <option value="">All Time</option>
+                                <option value="today">Today</option>
+                                <option value="week">This Week</option>
+                                <option value="month">This Month</option>
+                                <option value="year">This Year</option>
+                            </select>
+                        </div>
+                        <button class="filter-btn">Apply Filters</button>
+                        <button class="clear-btn">Clear</button>
+                    </div>
+                </div>
+
+                <!-- Transaction Table -->
+                <div class="transaction-table-card wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="table-header">
+                        <h5>Transaction History</h5>
+                        <div class="view-toggle">
+                            <button class="active"><i class="icon_menu"></i></button>
+                            <button><i class="icon_grid-2x2"></i></button>
+                        </div>
+                    </div>
+
+                    <table class="transaction-table">
+                        <thead>
+                            <tr>
+                                <th>Transaction</th>
+                                <th>Category</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="transaction-cell">
+                                        <div class="trans-icon income">
+                                            <i class="arrow_carrot-down"></i>
+                                        </div>
+                                        <div class="trans-details">
+                                            <h6>Salary Deposit</h6>
+                                            <span>Bank Transfer • Acme Corp</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="category-badge salary">Salary</span></td>
+                                <td>Jan 05, 2026</td>
+                                <td><span class="amount positive">+$5,250.00</span></td>
+                                <td><span class="status-badge completed">Completed</span></td>
+                                <td>
+                                    <div class="action-btns">
+                                        <button title="View"><i class="icon_search"></i></button>
+                                        <button title="Download"><i class="icon_download"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="transaction-cell">
+                                        <div class="trans-icon expense">
+                                            <i class="arrow_carrot-up"></i>
+                                        </div>
+                                        <div class="trans-details">
+                                            <h6>Amazon Purchase</h6>
+                                            <span>Online • Amazon.com</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="category-badge shopping">Shopping</span></td>
+                                <td>Jan 04, 2026</td>
+                                <td><span class="amount negative">-$156.00</span></td>
+                                <td><span class="status-badge completed">Completed</span></td>
+                                <td>
+                                    <div class="action-btns">
+                                        <button title="View"><i class="icon_search"></i></button>
+                                        <button title="Download"><i class="icon_download"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="transaction-cell">
+                                        <div class="trans-icon transfer">
+                                            <i class="icon_currency"></i>
+                                        </div>
+                                        <div class="trans-details">
+                                            <h6>Transfer to Sarah</h6>
+                                            <span>Bank Transfer • Personal</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="category-badge bills">Transfer</span></td>
+                                <td>Jan 03, 2026</td>
+                                <td><span class="amount negative">-$500.00</span></td>
+                                <td><span class="status-badge pending">Pending</span></td>
+                                <td>
+                                    <div class="action-btns">
+                                        <button title="View"><i class="icon_search"></i></button>
+                                        <button title="Download"><i class="icon_download"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="transaction-cell">
+                                        <div class="trans-icon expense">
+                                            <i class="arrow_carrot-up"></i>
+                                        </div>
+                                        <div class="trans-details">
+                                            <h6>Uber Ride</h6>
+                                            <span>Transport • Uber</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="category-badge transport">Transport</span></td>
+                                <td>Jan 03, 2026</td>
+                                <td><span class="amount negative">-$24.50</span></td>
+                                <td><span class="status-badge completed">Completed</span></td>
+                                <td>
+                                    <div class="action-btns">
+                                        <button title="View"><i class="icon_search"></i></button>
+                                        <button title="Download"><i class="icon_download"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="transaction-cell">
+                                        <div class="trans-icon expense">
+                                            <i class="arrow_carrot-up"></i>
+                                        </div>
+                                        <div class="trans-details">
+                                            <h6>Netflix Subscription</h6>
+                                            <span>Subscription • Netflix</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="category-badge entertainment">Entertainment</span></td>
+                                <td>Jan 02, 2026</td>
+                                <td><span class="amount negative">-$15.99</span></td>
+                                <td><span class="status-badge completed">Completed</span></td>
+                                <td>
+                                    <div class="action-btns">
+                                        <button title="View"><i class="icon_search"></i></button>
+                                        <button title="Download"><i class="icon_download"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="transaction-cell">
+                                        <div class="trans-icon expense">
+                                            <i class="arrow_carrot-up"></i>
+                                        </div>
+                                        <div class="trans-details">
+                                            <h6>Starbucks Coffee</h6>
+                                            <span>Food & Dining • Starbucks</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="category-badge food">Food</span></td>
+                                <td>Jan 02, 2026</td>
+                                <td><span class="amount negative">-$6.75</span></td>
+                                <td><span class="status-badge completed">Completed</span></td>
+                                <td>
+                                    <div class="action-btns">
+                                        <button title="View"><i class="icon_search"></i></button>
+                                        <button title="Download"><i class="icon_download"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="transaction-cell">
+                                        <div class="trans-icon income">
+                                            <i class="arrow_carrot-down"></i>
+                                        </div>
+                                        <div class="trans-details">
+                                            <h6>Freelance Payment</h6>
+                                            <span>PayPal • Web Design</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="category-badge freelance">Freelance</span></td>
+                                <td>Jan 01, 2026</td>
+                                <td><span class="amount positive">+$1,200.00</span></td>
+                                <td><span class="status-badge completed">Completed</span></td>
+                                <td>
+                                    <div class="action-btns">
+                                        <button title="View"><i class="icon_search"></i></button>
+                                        <button title="Download"><i class="icon_download"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="transaction-cell">
+                                        <div class="trans-icon expense">
+                                            <i class="arrow_carrot-up"></i>
+                                        </div>
+                                        <div class="trans-details">
+                                            <h6>Electric Bill</h6>
+                                            <span>Utility • City Power</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="category-badge bills">Bills</span></td>
+                                <td>Dec 31, 2025</td>
+                                <td><span class="amount negative">-$125.00</span></td>
+                                <td><span class="status-badge completed">Completed</span></td>
+                                <td>
+                                    <div class="action-btns">
+                                        <button title="View"><i class="icon_search"></i></button>
+                                        <button title="Download"><i class="icon_download"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Pagination -->
+                    <div class="table-pagination">
+                        <div class="pagination-info">
+                            Showing 1 to 8 of 156 transactions
+                        </div>
+                        <div class="pagination-controls">
+                            <button disabled><i class="arrow_carrot-left"></i></button>
+                            <button class="active">1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <button>...</button>
+                            <button>20</button>
+                            <button><i class="arrow_carrot-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+    <!-- Dashboard Area End -->
+
+    <!-- Back to top button -->
+    <a id="back-to-top" title="Back to Top"></a>
+
+    <!-- JS here -->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/preloader.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/jquery.smoothscroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+
+</html>
