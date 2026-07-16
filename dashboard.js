@@ -1,15 +1,39 @@
 (async () => {
+
     try {
+
         const user = await account.get();
 
-        console.log("Logged in as:", user.email);
-
-        // Optional: display email
-        const emailEl = document.getElementById("userEmail");
-        if (emailEl) emailEl.textContent = user.email;
+        console.log("Logged in:", user);
 
     } catch (err) {
-        // Not logged in
+
         window.location.href = "login.html";
+
     }
+
 })();
+
+const logoutBtn = document.getElementById("logoutBtn");
+
+if (logoutBtn) {
+
+    logoutBtn.addEventListener("click", async (e) => {
+
+        e.preventDefault();
+
+        try {
+
+            await account.deleteSession("current");
+
+            window.location.href = "login.html";
+
+        } catch (err) {
+
+            console.error(err);
+
+        }
+
+    });
+
+}
