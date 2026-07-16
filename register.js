@@ -10,20 +10,21 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
     }
 
     try {
-        // Save for the verification page
+        // Save data for verify page
         localStorage.setItem("pendingName", name);
         localStorage.setItem("pendingEmail", email);
 
         // Send OTP
-     const token = await account.createEmailToken(
-    Appwrite.ID.unique(),
-    email
-);
+        const token = await account.createEmailToken({
+            userId: Appwrite.ID.unique(),
+            email: email
+        });
 
-console.log(JSON.stringify(token, null, 2));
-        
- // Go to OTP page
-window.location.href = "verify.html";
+        // Save the userId returned by Appwrite
+        localStorage.setItem("pendingUserId", token.userId);
+
+        // Go to verify page
+        window.location.href = "verify.html";
 
     } catch (err) {
         console.error(err);
