@@ -119,10 +119,27 @@
                     <ul>
                         <li><a href="settings.html"><i class="icon_cog"></i> Settings</a></li>
                         <li><a href="contact.html"><i class="icon_lifesaver"></i> Help Center</a></li>
-                        <li><a href="#"><i class="icon_key_alt"></i> Logout</a></li>
+                        <li><a href="#" id="logoutBtn"><i class="icon_key_alt"></i> Logout</a></li>
                     </ul>
                 </nav>
             </aside>
+
+            <script>
+document.getElementById("logoutBtn").addEventListener("click", async (e) => {
+    e.preventDefault();
+
+    try {
+        await account.deleteSession("current");
+
+        // Go back to login
+        window.location.href = "login.html";
+
+    } catch (err) {
+        console.error(err);
+        alert("Failed to log out.");
+    }
+});
+</script>
 
             <!-- Main Content -->
             <main class="dashboard-content">
